@@ -25,14 +25,14 @@ header h1{
 header input{
   font-size: 2.5em;
   border: none;
-  padding: 0.5em;
+  padding: 0.2em;
   color: #3f3f3f;
 }
 header button{
   font-size: 2.5em;
   border: none;
   color: #3f3f3f;
-  padding: 0.5em;
+  padding: 0.2em;
 }
 a.logo {
   font-size: 1.5em;
