@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 80px;
+  font-size: 1.5em;
+}
+header{
+  height: 455px;
+  background: url(img/tower.jpg) center -10vw no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 115px;
+}
+header h1{
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+header input{
+  font-size: 2.5em;
+  border: none;
+  padding: 0.5em;
+  color: #3f3f3f;
+}
+header button{
+  font-size: 2.5em;
+  border: none;
+  color: #3f3f3f;
+  padding: 0.5em;
+}
+a.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1230px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 2vw;
+  padding: 0 20px 20px;
+  }
+main > section {
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+}
+section > img {
+  width: 100%;
+}
+.language {
+  padding: 10px 20px;
+  background: #f1f3f4;
+  border-radius: 5px;
+}
+footer {
+  height: 100px;
+  background: #f5f5f5;
+}
