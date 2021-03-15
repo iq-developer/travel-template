@@ -9,9 +9,21 @@
 </head>
 <body>
   <nav>
-    <div class="nav-left"><a class="logo" href="#">Travel</a></div>
+    <div class="nav-left">
+      <ul>
+        <li><a class="logo" href="#">Travel</a></li>
+      </ul>
+    </div>
     <div class="nav-right">
-      <div class="language">RU <img src="img/arrow.png" alt=""></div>
+
+      <div class="language">
+        <img src="img/hamburger.png" alt="login" width="40px" height="40px" class="float responsive-menu">
+        <img src="img/login.png" alt="login" width="40px" height="40px" class="float">
+        <select >
+          <option>RU</option>
+          <option>EN</option>
+          <option>DE</option>
+        </select></div>
     </div>
   </nav>
   <header>
@@ -20,8 +32,8 @@
       <input type="search" /><button type="submit" >search</button>
     </form>
   </header>
-  <main>
-    <section>
+  <main class="grid">
+    <section >
       <img src="img/venice.jpg" alt="">
       <h2>Италия</h2>
     </section>
@@ -47,7 +59,25 @@
     </section>
 
   </main>
-  <footer></footer>
+  <footer>
+    <div class="wrapper">
+      <div class="float w150">
+        <p><strong>Created by</strong></p>
+        <p><strong>© 2021</strong></p>
+      </div>
+      <div class="float w150">
+        <p><a href="https://github.com/slavalobikov">slavalobikov</a></p>
+        <p><a href="https://github.com/dzianiskor">dzianiskor</a></p>
+      </div>
+      <div class="float w150">
+        <p><a href="https://github.com/iq-developer">iq-developer</a></p>
+        <p><a href="https://github.com/dmitsmerd">dmitsmerd</a></p>
+      </div>
+      <div class="float w150">
+        <a href="https://rs.school/react/"><img src="img/rs_school.svg" alt="RS School" height="100px" class="float w150"></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
