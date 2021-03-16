@@ -56,6 +56,36 @@ select {
   display: none;
 }
 
+/* Widgets */
+
+.widgets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0 0;
+  font-size: 1.5em;
+}
+article {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 0 50px 20px;
+}
+.weather-desc {
+  font-size: 0.8em;
+}
+.currency-desc{
+  font-size: 0.9em;
+}
+.time-title{
+  font-size: 2.5em;
+  line-height: 0.1em;
+}
+.time-desc{
+  font-size: 0.9em;
+
+}
+
+
+
 /* Header */
 
 header {
@@ -101,7 +131,7 @@ main {
 }
 main > section {
   text-align: center;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 section img {
   width: 100%;
@@ -265,9 +295,23 @@ footer {
   .menu {
     display: none;
   }
-
+  .widgets {
+    display: block;
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+  }
+  article {
+    padding: 10px 50px 20px;
+  }
 }
-
+@media (max-width: 800px) {
+  .widgets {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+}
 /* Script */
 
 .mobile-menu {
