@@ -6,6 +6,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+p {
+  font-size: 1.5em;
+}
 a:hover {
   color: #5191fa;
 }
@@ -14,6 +17,9 @@ h2 {
   margin-top: 1em;
   color: #3f3f3f;
 }
+.big{
+  font-size: 3em;
+}
 nav {
   display: flex;
   align-items: center;
@@ -21,6 +27,7 @@ nav {
   padding: 10px 50px 0;
   font-size: 1.5em;
   height: 100px;
+  border-bottom: solid 1px #ccc;
 }
 header {
   height: 455px;
@@ -35,16 +42,20 @@ header h1 {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 header input {
-  font-size: 2.5em;
+  font-size: 1.5em;
   border: none;
-  padding: 0.2em;
+  padding: 1em;
   color: #3f3f3f;
 }
 header button {
-  font-size: 2.5em;
+  font-size: 1.5em;
   border: none;
   color: #3f3f3f;
-  padding: 0.2em;
+  padding: 1em;
+  cursor: pointer;
+}
+header button:hover {
+  background: #ccc;
 }
 main {
   max-width: 1230px;
@@ -60,7 +71,7 @@ main > section {
   text-align: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
-section > img {
+section img {
   width: 100%;
 }
 .language > img {
@@ -75,8 +86,8 @@ footer {
   height: 100px;
   padding: 10px 0 20px;
   max-width: 600px;
-  font-size: 1.3em;
   color: #424242;
+  font-size: 0.9em;
 }
 .float {
   float: left;
@@ -125,7 +136,8 @@ footer {
 }
 select {
   font-size: 1em;
-  margin-top: -10px;
+  padding: 0.2em;
+  background: #fff;
 }
 
 /* image gallery */
@@ -150,15 +162,29 @@ select {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  font-size: 2em;
-  padding: 5%;
+
+  padding: 0 5% 2%;
   width: 90%;
+  display: block;
+  cursor: pointer;
 }
 .thumb-bar img {
   display: block;
   width: 16.66%;
   float: left;
   cursor: pointer;
+}
+
+.link{
+  margin: 0;
+  padding: 1em 0;
+  width: 100%;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+.link:hover{
+  background: #f5f5f5;
 }
 
 /* responsive video */
@@ -193,10 +219,42 @@ select {
   position: absolute;
 }
 
+.p20 {
+  padding-right: 20px;
+}
+
 
 .responsive-menu {
   display: none;
 }
+
+.opacity {
+  cursor: pointer;
+  opacity: 1;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.opacity:hover {
+  opacity: 0.7;
+}
+
+.gallery-title {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+.hidden{
+  display: none;
+}
+.open-description{
+  height: 97%;
+}
+
+
+
+
 
 @media (max-width: 1000px) {
   .responsive-menu {
