@@ -10,14 +10,18 @@
 <body>
   <nav>
     <div class="nav-left">
-      <ul>
-        <li><a class="logo" href="#">Travel</a></li>
+      <a class="logo float" href="#">Travel</a>
+      <ul class="menu float" id="menu">
+        <li><a class="menu-item" href="#">Описание</a></li>
+        <li><a class="menu-item" href="#">Галерея</a></li>
+        <li><a class="menu-item" href="#">Видео</a></li>
+        <li><a class="menu-item" href="#">Карта</a></li>
       </ul>
     </div>
     <div class="nav-right">
       <div class="language">
-        <a href="#" class="float responsive-menu p20"><img src="img/hamburger.png" alt="login" width="40px" height="40px" ></a>
-        <a href="#" class="float p20"><img src="img/login.png" alt="login" width="40px" height="40px" ></a>       
+        <a href="#" id="hamburger" class="float responsive-menu p20"><img src="img/hamburger.png" alt="login" width="40px" height="40px" ></a>
+        <a href="#" class="float p20"><img src="img/login.png" alt="login" width="40px" height="40px" ></a>
         <select>
           <option>RU</option>
           <option>EN</option>
@@ -35,7 +39,7 @@
 
     <section>
       <a href="#"><img src="img/venice.jpg" alt="" class="opacity"></a>
-      <a href="#"><h2 class="link">Италия</h2></a>  
+      <a href="#"><h2 class="link">Италия</h2></a>
     </section>
     <section>
         <a href="#"><img src="img/france.jpg" alt="" class="opacity"></a>
@@ -79,5 +83,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

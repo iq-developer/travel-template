@@ -1,3 +1,5 @@
+/* Main styles */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -5,9 +7,6 @@ body {
 a {
   text-decoration: none;
   color: #000;
-}
-p {
-  font-size: 1.5em;
 }
 a:hover {
   color: #5191fa;
@@ -17,9 +16,12 @@ h2 {
   margin-top: 1em;
   color: #3f3f3f;
 }
-.big{
-  font-size: 3em;
+p {
+  font-size: 1.5em;
 }
+
+/* Navigation */
+
 nav {
   display: flex;
   align-items: center;
@@ -29,6 +31,33 @@ nav {
   height: 100px;
   border-bottom: solid 1px #ccc;
 }
+.nav-left li {
+  display: inline-block;
+  list-style: none;
+}
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  text-transform: none;
+}
+.menu-item {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+}
+select {
+  font-size: 1em;
+  padding: 0.2em;
+  background: #fff;
+}
+.responsive-menu {
+  display: none;
+}
+
+/* Header */
+
 header {
   height: 455px;
   background: url(img/tower.jpg) center -10vw no-repeat;
@@ -57,6 +86,9 @@ header button {
 header button:hover {
   background: #ccc;
 }
+
+/* Centeral column */
+
 main {
   max-width: 1230px;
   margin: 20px auto;
@@ -74,13 +106,12 @@ main > section {
 section img {
   width: 100%;
 }
-.language > img {
-  padding-right: 20px;
-}
+
+/* Footer */
+
 footer {
   background: #f5f5f5;
 }
-
 .wrapper {
   margin: 0 auto;
   height: 100px;
@@ -88,9 +119,6 @@ footer {
   max-width: 600px;
   color: #424242;
   font-size: 0.9em;
-}
-.float {
-  float: left;
 }
 .wrapper img {
   margin-top: 10px;
@@ -107,40 +135,39 @@ footer {
   text-decoration: none;
   color: #000;
 }
+
+/* Additional styles */
+
+.float {
+  float: left;
+}
 .w170 {
   width: 170px;
 }
 .w150 {
   width: 150px;
 }
-.nav-left ul {
-  margin-top: 0;
+.p20 {
+  padding-right: 20px;
 }
-.nav-left li {
-  display: inline-block;
-  list-style: none;
+.opacity {
+  cursor: pointer;
+  opacity: 1;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
 }
-.logo {
-  font-size: 2em;
-  font-weight: bold;
-  color: #000;
-  text-transform: none;
-  padding-right: 50px;
+.opacity:hover {
+  opacity: 0.6;
 }
-.menu {
-  font-size: 0.7em;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px;
-  vertical-align: top;
+.hidden{
+  display: none;
 }
-select {
-  font-size: 1em;
-  padding: 0.2em;
-  background: #fff;
+.big {
+  font-size: 3em;
 }
 
-/* image gallery */
+/* Image gallery */
 
 .full-img {
   position: relative;
@@ -162,7 +189,6 @@ select {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-
   padding: 0 5% 2%;
   width: 90%;
   display: block;
@@ -174,20 +200,24 @@ select {
   float: left;
   cursor: pointer;
 }
-
 .link{
   margin: 0;
   padding: 1em 0;
   width: 100%;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
 }
 .link:hover{
   background: #f5f5f5;
+  color: #5191fa;
+}
+.gallery-title {
+  font-size: 1.9em;
+  font-weight: bold;
+}
+.open-description{
+  height: 97%;
 }
 
-/* responsive video */
+/* Responsive video */
 
 .videoWrapper {
   position: relative;
@@ -202,7 +232,7 @@ select {
   height: 100%;
 }
 
-/* responsive map */
+/* Responsive map */
 
 .map-responsive {
   overflow: hidden;
@@ -210,7 +240,6 @@ select {
   position: relative;
   height: 0;
 }
-
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -219,48 +248,37 @@ select {
   position: absolute;
 }
 
-.p20 {
-  padding-right: 20px;
-}
-
-
-.responsive-menu {
-  display: none;
-}
-
-.opacity {
-  cursor: pointer;
-  opacity: 1;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-}
-
-.opacity:hover {
-  opacity: 0.7;
-}
-
-.gallery-title {
-  font-size: 1.9em;
-  font-weight: bold;
-}
-
-.hidden{
-  display: none;
-}
-.open-description{
-  height: 97%;
-}
-
-
-
-
+/* Media */
 
 @media (max-width: 1000px) {
   .responsive-menu {
     display: block;
   }
-  .nav-left {
+  .menu {
     display: none;
   }
+
+}
+
+/* Script */
+
+.mobile-menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+.mobile-li {
+  display: list-item!important;
+}
+.mobile-li:hover {
+  color: #fff;
+  background: #000;
+}
+.mobile-a {
+  display: block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  line-height: 2em;
+  padding: 20px 100px;
 }

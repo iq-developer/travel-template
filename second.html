@@ -10,18 +10,18 @@
 <body>
   <nav>
     <div class="nav-left">
-      <ul>
-        <li><a class="logo" href="#">Travel</a></li>
-        <li><a class="menu" href="#">О стране</a></li>
-        <li><a class="menu" href="#">Галерея</a></li>
-        <li><a class="menu" href="#">Видео</a></li>
-        <li><a class="menu" href="#">Карта</a></li>
+      <a class="logo float" href="#">Travel</a>
+      <ul class="menu float" id="menu">
+        <li><a class="menu-item" href="#">Описание</a></li>
+        <li><a class="menu-item" href="#">Галерея</a></li>
+        <li><a class="menu-item" href="#">Видео</a></li>
+        <li><a class="menu-item" href="#">Карта</a></li>
       </ul>
     </div>
     <div class="nav-right">
       <div class="language">
-        <a href="#" class="float responsive-menu p20"><img src="img/hamburger.png" alt="login" width="40px" height="40px" ></a>
-        <a href="#" class="float p20"><img src="img/login.png" alt="login" width="40px" height="40px" ></a>       
+        <a href="#" id="hamburger" class="float responsive-menu p20"><img src="img/hamburger.png" alt="login" width="40px" height="40px" ></a>
+        <a href="#" class="float p20"><img src="img/login.png" alt="login" width="40px" height="40px" ></a>
         <select>
           <option>RU</option>
           <option>EN</option>
@@ -92,5 +92,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
