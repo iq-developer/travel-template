@@ -258,7 +258,7 @@ footer {
 
 /* Media */
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .responsive-menu {
     display: block;
   }
